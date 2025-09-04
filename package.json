@@ -4,5 +4,9 @@
     "dotenv": "^17.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node24": "^24.0.1"
   }
 }
