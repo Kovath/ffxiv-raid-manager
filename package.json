@@ -16,5 +16,9 @@
   "dependencies": {
     "concurrently": "^9.2.1",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node24": "^24.0.1"
   }
 }
