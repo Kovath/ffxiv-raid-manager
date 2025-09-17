@@ -1,8 +1,16 @@
 import express from 'express';
 import type { Express, Request, Response } from 'express';
-import * as dotenv from 'dotenv';
+import 'dotenv/config';
 
-dotenv.config();
+// configure database
+import { drizzle } from 'drizzle-orm/node-postgres'
+
+const db = drizzle({
+  connection: {
+    connectionString: process.env.DATABASE_URL!,
+    ssl: true,
+  }
+})
 
 const app: Express = express();
 const port = process.env.PORT || 3000;
